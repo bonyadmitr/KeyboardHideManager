@@ -10,7 +10,7 @@ import UIKit
 
 final public class KeyboardHideManager: NSObject {
     
-    @IBOutlet private var targets: [UIView] = [] {
+    @IBOutlet internal var targets: [UIView] = [] {
         didSet {
             for target in targets {
                 addGesture(to: target)
@@ -18,18 +18,18 @@ final public class KeyboardHideManager: NSObject {
         }
     }
     
-    private func addGesture(to target: UIView) {
+    internal func addGesture(to target: UIView) {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         target.addGestureRecognizer(gesture)
     }
     
-    @objc private func dismissKeyboard() {
+    @objc internal func dismissKeyboard() {
         targets.first?.topSuperview?.endEditing(true)
     }
 }
 
 extension UIView {
-    fileprivate var topSuperview: UIView? {
+    internal var topSuperview: UIView? {
         var view = superview
         while view?.superview != nil {
             view = view!.superview
