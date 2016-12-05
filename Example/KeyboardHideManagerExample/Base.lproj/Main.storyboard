@@ -71,15 +71,15 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="Rh7-WE-CKs" customClass="KeyboardHideManager" customModule="KeyboardHideManager">
+                <customObject id="Mrh-Bn-eM8" customClass="KeyboardHideManager" customModule="KeyboardHideManager">
                     <connections>
-                        <outletCollection property="targets" destination="orH-Qy-rw4" collectionClass="NSMutableArray" id="klE-OL-upz"/>
-                        <outletCollection property="targets" destination="Eqk-Vd-CQm" collectionClass="NSMutableArray" id="QQ8-eE-BtN"/>
-                        <outletCollection property="targets" destination="t7i-a8-v7k" collectionClass="NSMutableArray" id="jDx-HO-Yvk"/>
+                        <outletCollection property="targets" destination="orH-Qy-rw4" collectionClass="NSMutableArray" id="JLa-EE-abg"/>
+                        <outletCollection property="targets" destination="Eqk-Vd-CQm" collectionClass="NSMutableArray" id="dFE-xU-JSN"/>
+                        <outletCollection property="targets" destination="t7i-a8-v7k" collectionClass="NSMutableArray" id="xOi-1z-vha"/>
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="135" y="138.75"/>
+            <point key="canvasLocation" x="129" y="205"/>
         </scene>
     </scenes>
 </document>
