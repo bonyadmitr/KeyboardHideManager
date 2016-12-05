@@ -12,21 +12,21 @@
 		7B0659D11DF5EC7800945BB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0659CF1DF5EC7800945BB6 /* Main.storyboard */; };
 		7B0659D31DF5EC7800945BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B0659D21DF5EC7800945BB6 /* Assets.xcassets */; };
 		7B0659D61DF5EC7800945BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0659D41DF5EC7800945BB6 /* LaunchScreen.storyboard */; };
-		7B0659E71DF5EE1100945BB6 /* KeyboardHideManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0659E31DF5EC9000945BB6 /* KeyboardHideManager.framework */; };
-		7B0659EE1DF5EE3500945BB6 /* KeyboardHideManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B0659E31DF5EC9000945BB6 /* KeyboardHideManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B0659FC1DF5F27200945BB6 /* KeyboardHideManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0659F91DF5F25C00945BB6 /* KeyboardHideManager.framework */; };
+		7B0659FD1DF5F27A00945BB6 /* KeyboardHideManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B0659F91DF5F25C00945BB6 /* KeyboardHideManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B0659E21DF5EC9000945BB6 /* PBXContainerItemProxy */ = {
+		7B0659F81DF5F25C00945BB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7B0659DD1DF5EC8F00945BB6 /* KeyboardHideManager.xcodeproj */;
+			containerPortal = 7B0659F31DF5F25B00945BB6 /* KeyboardHideManager.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7B0659A11DF5E84A00945BB6;
 			remoteInfo = KeyboardHideManager;
 		};
-		7B0659E41DF5EC9000945BB6 /* PBXContainerItemProxy */ = {
+		7B0659FA1DF5F25C00945BB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7B0659DD1DF5EC8F00945BB6 /* KeyboardHideManager.xcodeproj */;
+			containerPortal = 7B0659F31DF5F25B00945BB6 /* KeyboardHideManager.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7B0659AA1DF5E84A00945BB6;
 			remoteInfo = KeyboardHideManagerTests;
@@ -40,7 +40,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7B0659EE1DF5EE3500945BB6 /* KeyboardHideManager.framework in CopyFiles */,
+				7B0659FD1DF5F27A00945BB6 /* KeyboardHideManager.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +54,7 @@
 		7B0659D21DF5EC7800945BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B0659D51DF5EC7800945BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B0659D71DF5EC7800945BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B0659DD1DF5EC8F00945BB6 /* KeyboardHideManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeyboardHideManager.xcodeproj; path = ../KeyboardHideManager/KeyboardHideManager.xcodeproj; sourceTree = "<group>"; };
+		7B0659F31DF5F25B00945BB6 /* KeyboardHideManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeyboardHideManager.xcodeproj; path = ../KeyboardHideManager.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B0659E71DF5EE1100945BB6 /* KeyboardHideManager.framework in Frameworks */,
+				7B0659FC1DF5F27200945BB6 /* KeyboardHideManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,7 @@
 			children = (
 				7B0659CA1DF5EC7800945BB6 /* KeyboardHideManagerExample */,
 				7B0659C91DF5EC7800945BB6 /* Products */,
-				7B0659DD1DF5EC8F00945BB6 /* KeyboardHideManager.xcodeproj */,
+				7B0659F31DF5F25B00945BB6 /* KeyboardHideManager.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +99,11 @@
 			path = KeyboardHideManagerExample;
 			sourceTree = "<group>";
 		};
-		7B0659DE1DF5EC8F00945BB6 /* Products */ = {
+		7B0659F41DF5F25B00945BB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B0659E31DF5EC9000945BB6 /* KeyboardHideManager.framework */,
-				7B0659E51DF5EC9000945BB6 /* KeyboardHideManagerTests.xctest */,
+				7B0659F91DF5F25C00945BB6 /* KeyboardHideManager.framework */,
+				7B0659FB1DF5F25C00945BB6 /* KeyboardHideManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,8 +158,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 7B0659DE1DF5EC8F00945BB6 /* Products */;
-					ProjectRef = 7B0659DD1DF5EC8F00945BB6 /* KeyboardHideManager.xcodeproj */;
+					ProductGroup = 7B0659F41DF5F25B00945BB6 /* Products */;
+					ProjectRef = 7B0659F31DF5F25B00945BB6 /* KeyboardHideManager.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -170,18 +170,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		7B0659E31DF5EC9000945BB6 /* KeyboardHideManager.framework */ = {
+		7B0659F91DF5F25C00945BB6 /* KeyboardHideManager.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = KeyboardHideManager.framework;
-			remoteRef = 7B0659E21DF5EC9000945BB6 /* PBXContainerItemProxy */;
+			remoteRef = 7B0659F81DF5F25C00945BB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		7B0659E51DF5EC9000945BB6 /* KeyboardHideManagerTests.xctest */ = {
+		7B0659FB1DF5F25C00945BB6 /* KeyboardHideManagerTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = KeyboardHideManagerTests.xctest;
-			remoteRef = 7B0659E41DF5EC9000945BB6 /* PBXContainerItemProxy */;
+			remoteRef = 7B0659FA1DF5F25C00945BB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -371,6 +371,7 @@
 				7B0659DC1DF5EC7800945BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
