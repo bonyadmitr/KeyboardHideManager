@@ -1,0 +1,52 @@
+# Mac OS X
+#.DS_Store
+
+## Build generated
+xcuserdata/
+*.xcworkspace/
+#build/
+#DerivedData/
+#output/
+
+## Various settings
+#*.pbxuser
+#!default.pbxuser
+#*.mode1v3
+#!default.mode1v3
+#*.mode2v3
+#!default.mode2v3
+#*.perspectivev3
+#!default.perspectivev3
+
+## Other
+#*.xccheckout
+#*.moved-aside
+#*.xcuserstate
+#*.xcscmblueprint
+
+## Obj-C/Swift specific
+#*.hmap
+#*.ipa
+#*.dSYM.zip
+#*.dSYM
+
+## Playgrounds
+#timeline.xctimeline
+#playground.xcworkspace
+
+## Swift Package Manager
+#.build/
+
+## CocoaPods
+#Pods/
+
+## Carthage
+#Carthage/Checkouts
+#Carthage/Build
+
+## fastlane
+## https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+#fastlane/report.xml
+#fastlane/Preview.html
+#fastlane/screenshots
+#fastlane/test_output
