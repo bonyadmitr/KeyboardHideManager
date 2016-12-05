@@ -10,8 +10,6 @@ import UIKit
 
 final public class KeyboardHideManager: NSObject {
     
-    private var gestures: [UITapGestureRecognizer] = []
-    
     @IBOutlet private var targets: [UIView] = [] {
         didSet {
             for target in targets {
@@ -23,11 +21,10 @@ final public class KeyboardHideManager: NSObject {
     private func addGesture(to target: UIView) {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         target.addGestureRecognizer(gesture)
-        gestures.append(gesture)
     }
     
     @objc private func dismissKeyboard() {
-        targets[0].topSuperview?.endEditing(true)
+        targets.first?.topSuperview?.endEditing(true)
     }
 }
 
