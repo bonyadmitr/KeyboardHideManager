@@ -63,7 +63,7 @@ class KeyboardHideManagerTests: XCTestCase {
         let view = UIView()
         let textField = UITextField()
         view.addSubview(textField)
-        keyboardHideManager.targets += [view]
+        keyboardHideManager.targets = [view]
         textField.becomeFirstResponder()
         
         keyboardHideManager.dismissKeyboard()
