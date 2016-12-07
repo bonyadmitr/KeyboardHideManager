@@ -7,7 +7,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/KeyboardHideManager.svg)](http://cocoadocs.org/docsets/KeyboardHideManager)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](http://mit-license.org/)
 
-**KeyboardHideManager** - easy to use, codeless manager to hide keyboard by tapping on views for iOS written in Swift.
+**KeyboardHideManager** - codeless manager to hide keyboard by tapping on views for iOS written in Swift.
 
 ![preview](Resources/preview.png)
 
@@ -78,7 +78,7 @@ Close 'Your Target Name'.**xcodeproj** and open 'Your Target Name'.**xcworkspace
 
 ### Carthage (not supported)
 
-KeyboardHideManager cannot be used in IB due `.framework` issue. Use CocoaPods or Manual install.
+KeyboardHideManager cannot be used with Carthage in IB due `.framework` issue. Use CocoaPods or Manual install.
 
 ### Manually
 

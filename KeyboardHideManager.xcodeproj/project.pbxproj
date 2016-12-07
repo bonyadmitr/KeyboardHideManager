@@ -94,7 +94,6 @@
 				7B0659A41DF5E84A00945BB6 /* KeyboardHideManager.h */,
 				7B0659A51DF5E84A00945BB6 /* Info.plist */,
 			);
-			name = Settings;
 			path = Settings;
 			sourceTree = "<group>";
 		};
@@ -103,7 +102,6 @@
 			children = (
 				7B0659B11DF5E84A00945BB6 /* Info.plist */,
 			);
-			name = SettingsTests;
 			path = SettingsTests;
 			sourceTree = "<group>";
 		};
@@ -431,6 +429,7 @@
 				7B0659B71DF5E84A00945BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B0659B81DF5E84A00945BB6 /* Build configuration list for PBXNativeTarget "KeyboardHideManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +438,7 @@
 				7B0659BA1DF5E84A00945BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

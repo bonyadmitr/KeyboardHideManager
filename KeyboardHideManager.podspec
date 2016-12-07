@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = 'KeyboardHideManager'
-    s.version               = '1.0.0'
+    s.version               = '1.0.1'
     s.summary               = 'Codeless manager to hide keyboard by tapping on views for iOS written in Swift.'
     s.homepage              = 'https://github.com/bonyadmitr/KeyboardHideManager'
     s.author                = { 'Bondar Yaroslav' => 'bonyadmitr@gmail.com' }
