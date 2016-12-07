@@ -23,7 +23,7 @@ import UIKit
 final public class KeyboardHideManager: NSObject {
     
     /// Here will be saved targets added from IB
-    @IBOutlet internal var targets: [UIView] = [] {
+    @IBOutlet internal var targets: [UIView]! {
         didSet {
             for target in targets {
                 addGesture(to: target)
