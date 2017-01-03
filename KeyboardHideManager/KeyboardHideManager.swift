@@ -35,6 +35,7 @@ final public class KeyboardHideManager: NSObject {
     /// - Parameter target: A target that will be used to add gesture
     internal func addGesture(to target: UIView) {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        gesture.cancelsTouchesInView = false
         target.addGestureRecognizer(gesture)
     }
     
