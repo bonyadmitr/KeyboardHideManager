@@ -25,9 +25,7 @@ final public class KeyboardHideManager: NSObject {
     /// Here will be saved targets added from IB
     @IBOutlet internal var targets: [UIView]! {
         didSet {
-            for target in targets {
-                addGesture(to: target)
-            }
+            targets.forEach { addGesture(to: $0) }
         }
     }
     
@@ -35,22 +33,12 @@ final public class KeyboardHideManager: NSObject {
     /// - Parameter target: A target that will be used to add gesture
     internal func addGesture(to target: UIView) {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        gesture.cancelsTouchesInView = false
         target.addGestureRecognizer(gesture)
     }
     
-    /// Will find top superview of any taget and execute endEditing(true)
+    /// Execute endEditing(true) for top superview to hide keyboard
     @objc internal func dismissKeyboard() {
-        targets.first?.topSuperview?.endEditing(true)
-    }
-}
-
-extension UIView {
-    /// Will find top superview of view
-    internal var topSuperview: UIView? {
-        var view = superview
-        while view?.superview != nil {
-            view = view!.superview
-        }
-        return view
+        targets.first?.window?.endEditing(true)
     }
 }
