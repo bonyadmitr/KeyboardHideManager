@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    @IBAction func actionButton(_ sender: UIButton) {
+        print("button tapped \(Date())")
+    }
 }
 

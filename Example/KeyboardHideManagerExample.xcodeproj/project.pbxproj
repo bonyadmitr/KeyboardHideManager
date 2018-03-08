@@ -14,6 +14,7 @@
 		7B0659D61DF5EC7800945BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0659D41DF5EC7800945BB6 /* LaunchScreen.storyboard */; };
 		7B0659FC1DF5F27200945BB6 /* KeyboardHideManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0659F91DF5F25C00945BB6 /* KeyboardHideManager.framework */; };
 		7B0659FD1DF5F27A00945BB6 /* KeyboardHideManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B0659F91DF5F25C00945BB6 /* KeyboardHideManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEE0CD4B2051D93500488980 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CD4A2051D93500488980 /* KeyboardLayoutConstraint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		7B0659D51DF5EC7800945BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B0659D71DF5EC7800945BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B0659F31DF5F25B00945BB6 /* KeyboardHideManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeyboardHideManager.xcodeproj; path = ../KeyboardHideManager.xcodeproj; sourceTree = "<group>"; };
+		CEE0CD4A2051D93500488980 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +91,8 @@
 		7B0659CA1DF5EC7800945BB6 /* KeyboardHideManagerExample */ = {
 			isa = PBXGroup;
 			children = (
-				7B0659CB1DF5EC7800945BB6 /* AppDelegate.swift */,
-				7B0659CD1DF5EC7800945BB6 /* ViewController.swift */,
-				7B0659CF1DF5EC7800945BB6 /* Main.storyboard */,
-				7B0659D21DF5EC7800945BB6 /* Assets.xcassets */,
-				7B0659D41DF5EC7800945BB6 /* LaunchScreen.storyboard */,
-				7B0659D71DF5EC7800945BB6 /* Info.plist */,
+				CEE0CD4D2051D94700488980 /* App */,
+				CEE0CD4C2051D93C00488980 /* Presentation */,
 			);
 			path = KeyboardHideManagerExample;
 			sourceTree = "<group>";
@@ -106,6 +104,27 @@
 				7B0659FB1DF5F25C00945BB6 /* KeyboardHideManagerTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CEE0CD4C2051D93C00488980 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7B0659CF1DF5EC7800945BB6 /* Main.storyboard */,
+				7B0659CD1DF5EC7800945BB6 /* ViewController.swift */,
+				CEE0CD4A2051D93500488980 /* KeyboardLayoutConstraint.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CEE0CD4D2051D94700488980 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7B0659CB1DF5EC7800945BB6 /* AppDelegate.swift */,
+				7B0659D21DF5EC7800945BB6 /* Assets.xcassets */,
+				7B0659D41DF5EC7800945BB6 /* LaunchScreen.storyboard */,
+				7B0659D71DF5EC7800945BB6 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +225,7 @@
 			files = (
 				7B0659CE1DF5EC7800945BB6 /* ViewController.swift in Sources */,
 				7B0659CC1DF5EC7800945BB6 /* AppDelegate.swift in Sources */,
+				CEE0CD4B2051D93500488980 /* KeyboardLayoutConstraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = KeyboardHideManagerExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/KeyboardHideManagerExample/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bonya.KeyboardHideManagerExample;
@@ -345,7 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = KeyboardHideManagerExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/KeyboardHideManagerExample/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bonya.KeyboardHideManagerExample;
