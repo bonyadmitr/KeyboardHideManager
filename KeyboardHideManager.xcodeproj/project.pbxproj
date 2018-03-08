@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66E8B9991E53C049007CD005 /* KeyboardHideManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = 7B0659BD1DF5EA4900945BB6 /* KeyboardHideManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B0659AB1DF5E84A00945BB6 /* KeyboardHideManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0659A11DF5E84A00945BB6 /* KeyboardHideManager.framework */; };
 		7B0659B01DF5E84A00945BB6 /* KeyboardHideManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0659AF1DF5E84A00945BB6 /* KeyboardHideManagerTests.swift */; };
 		7B0659B21DF5E84A00945BB6 /* KeyboardHideManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B0659A41DF5E84A00945BB6 /* KeyboardHideManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -113,6 +114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0659B21DF5E84A00945BB6 /* KeyboardHideManager.h in Headers */,
+				66E8B9991E53C049007CD005 /* KeyboardHideManager.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

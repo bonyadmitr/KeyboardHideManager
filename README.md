@@ -6,6 +6,10 @@
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/KeyboardHideManager.svg)](https://cocoapods.org/)
 [![Platform](https://img.shields.io/cocoapods/p/KeyboardHideManager.svg)](http://cocoadocs.org/docsets/KeyboardHideManager)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](http://mit-license.org/)
+[![Awesome-ios](https://img.shields.io/badge/Awesome-ios-ff69b4.svg)](https://github.com/vsouza/awesome-ios#keyboard)
+[![Awesome-swift](https://img.shields.io/badge/Awesome-swift-ff69b4.svg)](https://github.com/matteocrippa/awesome-swift#keyboard)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
 
 **KeyboardHideManager** - codeless manager to hide keyboard by tapping on views for iOS written in Swift.
 
