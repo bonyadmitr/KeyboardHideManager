@@ -19,8 +19,9 @@ final public class KeyboardLayoutConstraint: NSLayoutConstraint {
     
     override public func awakeFromNib() {
         super.awakeFromNib()
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShowNotification), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHideNotification), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShowNotification), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHideNotification), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     deinit {
@@ -28,9 +29,12 @@ final public class KeyboardLayoutConstraint: NSLayoutConstraint {
     }
     
     @objc private func keyboardWillShowNotification(notification: NSNotification) {
-        guard let userInfo = notification.userInfo,
-            let keyboardFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
-            else { return }
+            guard
+                let userInfo = notification.userInfo,
+                let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+            else {
+                return
+            }
         
         constant = keyboardFrame.size.height + keyboardInset
         if isTabBar {
