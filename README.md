@@ -2,7 +2,7 @@
 
 ![Icon](Resources/keyboard_icon.png)
 
-[![Language](https://img.shields.io/badge/Swift-3.0+-orange.svg)](https://developer.apple.com/swift/)
+[![Language](https://img.shields.io/badge/Swift-5.0+-orange.svg)](https://developer.apple.com/swift/)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/KeyboardHideManager.svg)](https://cocoapods.org/)
 [![Platform](https://img.shields.io/cocoapods/p/KeyboardHideManager.svg)](http://cocoadocs.org/docsets/KeyboardHideManager)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](http://mit-license.org/)
@@ -39,8 +39,8 @@
 
 ## Requirements
 
-- Swift 3.0+
-- iOS 8.0+
+- Swift 5.0+
+- iOS 12.0+
 
 ## Installation
 
@@ -62,7 +62,6 @@ $ gem install cocoapods
 To integrate KeyboardHideManager into your Xcode project using CocoaPods, create file `Podfile` with content:
 
 ```ruby
-platform :ios, '9.0'
 use_frameworks!
 
 target '<Your Target Name>' do
